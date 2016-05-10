@@ -1,0 +1,4 @@
+json.array!(@desktop_computers) do |desktop_computer|
+  json.extract! desktop_computer, :id, :name, :price, :code, :brand, :brandmodel, :desktoptype, :usage, :colors, :processor, :processormainfeatures, :cacheperprocessor, :memory, :storage, :opticaldrive, :graphics, :audio, :ethernet, :powersupply, :keyboard, :mouse, :os, :specialfeatures, :cputype, :cpuspeed, :l2cachepercpu, :l3cachepercpu, :cpusockettype, :cpumainfeatures, :gpuvgatype, :memorycapacity, :memoryspeed, :memoryspec, :memoryslot, :maxmemorysupported, :hdd, :hddinterface, :hddrpm, :opticaldrivetype, :opticaldrivespec, :audiochipset, :audiochannels, :lanchipset, :lanspeed, :frontusb, :ps2, :videoports, :rearusb, :rj45, :rearaudioports, :pcislots, :mousetype, :keyboardtype, :dimensions, :weight, :warranty, :other
+  json.url desktop_computer_url(desktop_computer, format: :json)
+end

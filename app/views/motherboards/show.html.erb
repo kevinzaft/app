@@ -1,0 +1,35 @@
+
+<h1><%= @motherboard.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @motherboard.code %> <br>  
+    <%= @motherboard.motherboardtype %> <br>
+    <%= @motherboard.formfactor %> <br>
+    <%= @motherboard.cpu %> <br>
+    <%= @motherboard.chipset %> <br>
+    <%= @motherboard.memory %> <br>
+    <%= @motherboard.graphic %> <br>
+    <%= @motherboard.multigpu %> <br>
+    <%= @motherboard.expansion %> <br>
+    <%= @motherboard.storage %> <br>
+    <%= @motherboard.lan %> <br>
+    <%= @motherboard.audio %> <br>
+    <%= @motherboard.usb %> <br>
+    <%= @motherboard.workstation %> <br>
+    <%= @motherboard.special %> <br>
+    <%= @motherboard.backio %> <br>
+    <%= @motherboard.internalio %> <br>
+    <%= @motherboard.accessories %> <br>
+    <%= @motherboard.bios %> <br>
+    <%= @motherboard.manageability %> <br>
+    <%= @motherboard.supportdisc %> <br>
+    <%= @motherboard.os %> <br>
+  	<%= @motherboard.other%> <br>
+  	<%= @motherboard.price %> <br>
+  </span> 
+  </pre>
+<!--  <%= raw(@motherboard.other)%> <br>  -->
+  <a href="/motherboards/<%= @motherboard.id %>/edit">Edit</a>
+</p>
+

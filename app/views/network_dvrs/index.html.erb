@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Network Dvrs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @network_dvrs.each do |network_dvr| %>
+      <tr>
+        <td><%= network_dvr.name %></td>
+        <td><%= network_dvr.price %></td>
+       
+        <td><%= link_to 'Show', network_dvr %></td>
+        <td><%= link_to 'Edit', edit_network_dvr_path(network_dvr) %></td>
+        <td><%= link_to 'Destroy', network_dvr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Network dvr', new_network_dvr_path %>

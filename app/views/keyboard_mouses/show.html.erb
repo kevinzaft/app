@@ -1,0 +1,18 @@
+
+<h1><%= @keyboard_mouse.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @keyboard_mouse.code %> <br>	
+  	<%= @keyboard_mouse.brand %> <br>
+  	<%= @keyboard_mouse.productmodel %> <br>
+  	<%= @keyboard_mouse.producttype %> <br>
+  	<%= @keyboard_mouse.connection%> <br>
+  	<%= @keyboard_mouse.warranty%> <br>
+  	<%= @keyboard_mouse.other%> <br>
+  	<%= @keyboard_mouse.price %> <br>
+  </span> 
+  </pre>
+  <a href="/keyboard_mouses/<%= @keyboard_mouse.id %>/edit">Edit</a>
+</p>
+

@@ -1,0 +1,140 @@
+<h1>Edit</h1>
+
+<%= form_for(@computer_monitor) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :monitor_model %><br />
+    <%= f.text_field :monitormodel, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :monitor_type %><br />
+    <%= f.text_field :monitortype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :panel_type %><br />
+    <%= f.text_field :paneltype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :display %><br />
+    <%= f.text_field :display, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :resolution %><br />
+    <%= f.text_field :resolution, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ratio %><br />
+    <%= f.text_field :ratio, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :response %><br />
+    <%= f.text_field :response, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contrast %><br />
+    <%= f.text_field :contrast, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brightness %><br />
+    <%= f.text_field :brightness, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :display_colors %><br />
+    <%= f.text_field :displaycolors, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :input_connector %><br />
+    <%= f.text_field :inputconnector, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label "touchscreen?" %><br />
+    <%= f.text_field :touchscreen, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label "3d?" %><br />
+    <%= f.text_field :threed, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :built_in_speaker %><br />
+    <%= f.text_field :builtinspeaker, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :usb %><br />
+    <%= f.text_field :usb, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tv_tuner %><br />
+    <%= f.text_field :tvtuner, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :power %><br />
+    <%= f.text_field :power, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :heightadjustable %><br />
+    <%= f.text_field :heightadjustable, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tilt %><br />
+    <%= f.text_field :tilt, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dimensions %><br />
+    <%= f.text_field :dimensions, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :warranty %><br />
+    <%= f.text_field :warranty, :size => 150 %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.text_area :other, cols: "150", rows: "10" %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

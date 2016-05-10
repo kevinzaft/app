@@ -1,0 +1,82 @@
+<h1>Edit</h1>
+
+<%= form_for(@headset) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :headsettype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :headsetmodel %><br />
+    <%= f.text_field :headsetmodel, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :connection %><br />
+    <%= f.text_field :connection, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :design %><br />
+    <%= f.text_field :design, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :frequency %><br />
+    <%= f.text_field :frequency, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :impedance %><br />
+    <%= f.text_field :impedance, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sensitivity %><br />
+    <%= f.text_field :sensitivity, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :connectors %><br />
+    <%= f.text_field :connectors, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :warranty %><br />
+    <%= f.text_field :warranty, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :platform %><br />
+    <%= f.text_field :platform, :size => 150 %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.text_area :other, cols: "150", rows: "10" %>
+  </div>
+
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,117 @@
+<%= form_for(@sound_card) do |f| %>
+  <% if @sound_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sound_card.errors.count, "error") %> prohibited this sound_card from being saved:</h2>
+
+      <ul>
+      <% @sound_card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :chip_set %><br>
+    <%= f.text_field :chipset %>
+  </div>
+  <div class="field">
+    <%= f.label :channels %><br>
+    <%= f.text_field :channels %>
+  </div>
+  <div class="field">
+    <%= f.label :sample_rate %><br>
+    <%= f.text_field :samplerate %>
+  </div>
+  <div class="field">
+    <%= f.label :digital_audio %><br>
+    <%= f.text_field :digitalaudio %>
+  </div>
+  <div class="field">
+    <%= f.label :snr %><br>
+    <%= f.text_field :snr %>
+  </div>
+  <div class="field">
+    <%= f.label :line_in %><br>
+    <%= f.text_field :linein %>
+  </div>
+  <div class="field">
+    <%= f.label :line_out %><br>
+    <%= f.text_field :lineout %>
+  </div>
+  <div class="field">
+    <%= f.label :spd_if %><br>
+    <%= f.text_field :spdif %>
+  </div>
+  <div class="field">
+    <%= f.label :mic %><br>
+    <%= f.text_field :mic %>
+  </div>
+  <div class="field">
+    <%= f.label :aux_port %><br>
+    <%= f.text_field :auxport %>
+  </div>
+  <div class="field">
+    <%= f.label :other_port %><br>
+    <%= f.text_field :otherport %>
+  </div>
+  <div class="field">
+    <%= f.label :interface %><br>
+    <%= f.text_field :interface %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :system_requirements %><br>
+    <%= f.text_area :systemrequirements %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :dimension %><br>
+    <%= f.text_field :dimension %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :package_contents %><br>
+    <%= f.text_area :packagecontents %>
+  </div>
+  <div class="field">
+    <%= f.label :plug %><br>
+    <%= f.text_area :plug %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Cpus</h1>
+<a href="/cpus/new" class="new_cpu_link">New Product </a>
+<% @cpus.each do |cpu| %>
+  <h2><%= cpu.name %></h2>
+  <p>
+    <%= cpu.price %>
+  </p>
+  <%= link_to "View full Product", cpu %>
+  <a href="/cpus/<%= cpu.id %>" data-method="delete">Destroy</a>
+<% end %>

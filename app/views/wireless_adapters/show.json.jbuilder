@@ -1,0 +1,1 @@
+json.extract! @wireless_adapter, :id, :name, :price, :code, :brand, :brandmodel, :standards, :wirelessdatarates, :security, :interface, :frequencyband, :channel, :modulation, :transmittedpower, :antenna, :color, :systemrequirements, :features, :dimensions, :weight, :temperature, :humidity, :package, :warranty, :other, :created_at, :updated_at

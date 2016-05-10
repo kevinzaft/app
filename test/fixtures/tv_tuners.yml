@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  type: 
+  tvtuner: MyString
+  tvstandards: MyString
+  remotecontrol: MyString
+  videoencoding: MyString
+  tunerinterface: MyString
+  lowprofileready: MyString
+  fmtuner: MyString
+  videoformat: MyString
+  portsin: MyText
+  systemrequirments: MyText
+  processor: MyString
+  graphicscard: MyString
+  availableslot: MyString
+  os: MyText
+  features: MyText
+  packagecontent: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  type: 
+  tvtuner: MyString
+  tvstandards: MyString
+  remotecontrol: MyString
+  videoencoding: MyString
+  tunerinterface: MyString
+  lowprofileready: MyString
+  fmtuner: MyString
+  videoformat: MyString
+  portsin: MyText
+  systemrequirments: MyText
+  processor: MyString
+  graphicscard: MyString
+  availableslot: MyString
+  os: MyText
+  features: MyText
+  packagecontent: MyText
+  other: MyText

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Led Signs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @led_signs.each do |led_sign| %>
+      <tr>
+        <td><%= led_sign.name %></td>
+        <td><%= led_sign.price %></td>
+        <td><%= link_to 'Show', led_sign %></td>
+        <td><%= link_to 'Edit', edit_led_sign_path(led_sign) %></td>
+        <td><%= link_to 'Destroy', led_sign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Led sign', new_led_sign_path %>

@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  webcammodel: MyString
+  partnumber: MyString
+  color: MyString
+  interface: MyString
+  maximageres: MyString
+  videocaptureres: MyString
+  os: MyString
+  features: MyText
+  package: MyText
+  other: MyText
+  warranty: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  webcammodel: MyString
+  partnumber: MyString
+  color: MyString
+  interface: MyString
+  maximageres: MyString
+  videocaptureres: MyString
+  os: MyString
+  features: MyText
+  package: MyText
+  other: MyText
+  warranty: MyText

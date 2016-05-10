@@ -1,0 +1,1 @@
+json.extract! @camera, :id, :name, :price, :code, :cameramodel, :details, :imagesensor, :whitebalance, :viewfinder, :lcdmonitor, :focus, :exposure, :shutter, :flash, :drive, :function, :recording, :movie, :lens, :other, :warranty, :created_at, :updated_at

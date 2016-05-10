@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  series: MyString
+  brandmodel: MyString
+  format: MyString
+  standards: MyText
+  primaryports: MyString
+  primaryportspeed: MyString
+  layer: MyString
+  power: MyString
+  features: MyText
+  dimensions: MyString
+  weight: MyString
+  package: MyText
+  other: MyText
+  warranty: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  series: MyString
+  brandmodel: MyString
+  format: MyString
+  standards: MyText
+  primaryports: MyString
+  primaryportspeed: MyString
+  layer: MyString
+  power: MyString
+  features: MyText
+  dimensions: MyString
+  weight: MyString
+  package: MyText
+  other: MyText
+  warranty: MyText

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  mediatype: MyString
+  capacity: MyString
+  maxspeedsupported: MyString
+  quantity: MyString
+  features: MyText
+  packaging: MyString
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  mediatype: MyString
+  capacity: MyString
+  maxspeedsupported: MyString
+  quantity: MyString
+  features: MyText
+  packaging: MyString
+  other: MyText

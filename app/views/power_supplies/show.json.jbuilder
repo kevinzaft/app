@@ -1,0 +1,1 @@
+json.extract! @power_supply, :id, :name, :price, :code, :brand, :model, :series, :powertype, :maxpower, :fans, :pfc, :mainconnector, :twelvevrails, :pci, :sata, :efficiency, :voltageprotection, :inputvoltage, :inputfrequency, :inputcurrent, :output, :dimensions, :features, :created_at, :updated_at

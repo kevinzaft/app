@@ -1,0 +1,2 @@
+module CdMediaHelper
+end

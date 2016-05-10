@@ -1,0 +1,10 @@
+<h1>Flash</h1>
+<a href="/flash_digitals/new" class="new_computer_link">New Product </a>
+<% @flash_digitals.each do |flash_digital| %>
+  <h2><%= flash_digital.name %></h2>
+  <p>
+    <%= flash_digital.price %>
+  </p>
+  <%= link_to "View full Product", flash_digital %>
+  <a href="/flash_digitals/<%= flash_digital.id %>" data-method="delete">Destroy</a>
+<% end %>

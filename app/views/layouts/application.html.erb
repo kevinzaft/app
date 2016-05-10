@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Style.css">
+<div class ="container">
+
+	<head>
+		<title>MyWebsite</title>
+		<a href="/home"><img src="header.jpg" alt="header" ></a>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="header">HEADER</div>
+
+		<nav class="nav">
+		<ul>
+<!-- 		<% link_to "Home", home_path %>
+		<% link_to "Blog", burner_readers_path %>
+		<% link_to "About", about_path %>
+		<% link_to "Contact", contact_path %> -->
+			<li><a href="/home">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/burner_readers">Burners/Readers</a></li>
+			<li><a href="/cables">Cables</a></li>
+			<li><a href="/computer_cases">Computer Cases</a></li>
+			<li><a href="/cpus">Cpu</a></li>
+			<li><a href="/flash_digitals">FLASH/DIGITAL MEMORY / DRIVES</a></li>
+			<li><a href="/hard_drives">Hard Drives</a></li>
+			<li><a href="/headsets">Headsets</a></li>
+			<li><a href="/io_controllers">I/O Controllers</a></li>
+			<li><a href="/keyboard_mouses">Keyboard and Mouses</a></li>
+			<li><a href="/memories">Memory</a></li>
+			<li><a href="/computer_monitors">Computer Monitors</a></li>
+			<li><a href="/motherboards">Motherboards</a></li>
+			<li><a href="/power_protections">Power Protections</a></li>
+			<li><a href="/power_supplies">Power Supplies</a></li>
+			<li><a href="/printers">Printers</a></li>
+			<li><a href="/sound_cards">Sound Cards</a></li>
+			<li><a href="/speakers">Speakers</a></li>
+			<li><a href="/tools">Tools</a></li>
+			<li><a href="/tv_tuners">TV Tuners</a></li>
+			<li><a href="/video_cards">Video Cards</a></li>
+			<li><a href="/webcams">WebCams</a></li>
+			<li><a href="/android_tvs">Android TVs</a></li>
+			<li><a href="/appliances">Appliances</a></li>
+			<li><a href="/car_accessories">Car Accessories</a></li>
+			<li><a href="/cameras">Cameras</a></li>
+			<li><a href="/home_theater_systems">Home Theater Systems</a></li>
+			<li><a href="/led_signs">LED Signs</a></li>
+			<li><a href="/phone_accessories">Phone Accessories</a></li>
+			<li><a href="/tvs">TV</a></li>
+			<li><a href="/tv_mounts">TV Mounts</a></li>
+			<li><a href="/amplifiers">Amplifiers</a></li>
+			<li><a href="/karaoke_speakers">Karaoke Speakers</a></li>
+			<li><a href="/networking_accessories">Networking Accessories</a></li>
+			<li><a href="/network_adapters">Network Adapters</a></li>
+			<li><a href="/modems">Modems</a></li>
+			<li><a href="/network_switches">Network switches</a></li>
+			<li><a href="/powerline_adapters">Powerline Adapters</a></li>
+			<li><a href="/routers">Routers</a></li>
+			<li><a href="/wireless_adapters">Wireless Adapters</a></li>
+			<li><a href="/wireless_routers">Wireless Routers</a></li>
+			<li><a href="/pc_accessories">Accessories</a></li>
+			<li><a href="/desktop_computers">Desktop Computers</a></li>
+			<li><a href="/laptops">Laptops</a></li>
+			<li><a href="/servers">Servers</a></li>
+			<li><a href="/tablets">Tablets</a></li>
+			<li><a href="/home_offices">Home/Office</a></li>
+			<li><a href="/operating_systems">OS</a></li>
+			<li><a href="/securities">Security</a></li>
+			<li><a href="/bluray_storages">Blu-ray Storages</a></li>
+			<li><a href="/cd_media">CD Media</a></li>
+			<li><a href="/dvd_media">DVD Media</a></li>
+			<li><a href="/other_media">Other Media</a></li>
+			<li><a href="/surveillance_cables">Surveillance Cables</a></li>
+			<li><a href="/network_cameras">Network Cameras</a></li>
+			<li><a href="/surveillance_power_supplies">Power Supplies</a></li>
+			<li><a href="/security_cameras">Security Cameras</a></li>
+			<li><a href="/network_dvrs">Network DVR</a></li>
+		</ul>
+		</nav>
+
+		<div class="content">
+			<%= yield %>
+		</div>
+
+
+	</body>
+
+</div>
+</html>

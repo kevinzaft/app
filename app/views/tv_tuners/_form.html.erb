@@ -1,0 +1,109 @@
+<%= form_for(@tv_tuner) do |f| %>
+  <% if @tv_tuner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tv_tuner.errors.count, "error") %> prohibited this tv_tuner from being saved:</h2>
+
+      <ul>
+      <% @tv_tuner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :tunertype %>
+  </div>
+  <div class="field">
+    <%= f.label "TV Tuner" %><br>
+    <%= f.text_field :tvtuner %>
+  </div>
+  <div class="field">
+    <%= f.label :tv_standards %><br>
+    <%= f.text_field :tvstandards %>
+  </div>
+  <div class="field">
+    <%= f.label :remote_control %><br>
+    <%= f.text_field :remotecontrol %>
+  </div>
+  <div class="field">
+    <%= f.label :video_encoding %><br>
+    <%= f.text_field :videoencoding %>
+  </div>
+  <div class="field">
+    <%= f.label :tuner_interface %><br>
+    <%= f.text_field :tunerinterface %>
+  </div>
+  <div class="field">
+    <%= f.label :low_profile_ready %><br>
+    <%= f.text_field :lowprofileready %>
+  </div>
+  <div class="field">
+    <%= f.label :fm_tuner %><br>
+    <%= f.text_field :fmtuner %>
+  </div>
+  <div class="field">
+    <%= f.label :video_format %><br>
+    <%= f.text_field :videoformat %>
+  </div>
+  <div class="field">
+    <%= f.label :ports_in %><br>
+    <%= f.text_area :portsin %>
+  </div>
+  <div class="field">
+    <%= f.label :system_requirments %><br>
+    <%= f.text_area :systemrequirments %>
+  </div>
+  <div class="field">
+    <%= f.label :processor %><br>
+    <%= f.text_field :processor %>
+  </div>
+  <div class="field">
+    <%= f.label :graphics_card %><br>
+    <%= f.text_field :graphicscard %>
+  </div>
+  <div class="field">
+    <%= f.label :available_slot %><br>
+    <%= f.text_field :availableslot %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_area :os %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :package_content %><br>
+    <%= f.text_area :packagecontent %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

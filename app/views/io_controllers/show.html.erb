@@ -1,0 +1,18 @@
+
+<h1><%= @io_controller.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @io_controller.code %> <br>	
+  	<%= @io_controller.brand%> <br>
+  	<%= @io_controller.iomodel%> <br>
+  	<%= @io_controller.spec%> <br>
+  	<%= @io_controller.dimensions%> <br>
+    <%= @io_controller.requirements%> <br>
+    <%= @io_controller.other%> <br>
+  	<%= @io_controller.price %> <br>
+  </span> 
+  </pre>
+  <a href="/io_controllers/<%= @io_controller.id %>/edit">Edit</a>
+</p>
+

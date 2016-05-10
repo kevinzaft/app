@@ -1,0 +1,1 @@
+json.extract! @webcam, :id, :name, :price, :code, :brand, :webcammodel, :partnumber, :color, :interface, :maximageres, :videocaptureres, :os, :features, :package, :other, :warranty, :created_at, :updated_at

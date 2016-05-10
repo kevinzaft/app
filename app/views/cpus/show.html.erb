@@ -1,0 +1,28 @@
+
+<h1><%= @cpu.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @cpu.code %> <br>	
+  	<%= @cpu.cputype %> <br>
+    <%= @cpu.sockettype %> <br>
+    <%= @cpu.brand %> <br>
+    <%= @cpu.mpn %> <br>
+    <%= @cpu.cpumodel %> <br>
+    <%= @cpu.series %> <br>
+    <%= @cpu.cores %> <br>
+    <%= @cpu.threads %> <br>
+    <%= @cpu.clock %> <br>
+    <%= @cpu.cache %> <br>
+    <%= @cpu.power %> <br>
+    <%= @cpu.manufacturing %> <br>
+    <%= @cpu.memorytypes %> <br>
+    <%= @cpu.memorychannels %> <br>
+    <%= @cpu.graphics %> <br>
+    <%= @cpu.other %> <br>
+  	<%= @cpu.price %> <br>
+  </span> 
+  </pre>
+  <a href="/cpus/<%= @cpu.id %>/edit">Edit</a>
+</p>
+

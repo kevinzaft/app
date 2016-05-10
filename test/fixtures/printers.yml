@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  printertype: MyString
+  printtechnology: MyString
+  outputtype: MyString
+  resolution: MyString
+  blackspeed: MyString
+  colorspeed: MyString
+  connectivity: MyString
+  duplex: MyString
+  maxdutycycle: MyString
+  inputcapacity: MyString
+  mediasize: MyString
+  processor: MyString
+  memory: MyString
+  function: MyString
+  copy: MyString
+  fax: MyString
+  capability: MyString
+  scanner: MyString
+  scanresolution: MyString
+  autodocumentfeeder: MyString
+  powerconsumption: MyText
+  dimensions: MyString
+  weight: MyString
+  cartridges: MyString
+  warranty: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  printertype: MyString
+  printtechnology: MyString
+  outputtype: MyString
+  resolution: MyString
+  blackspeed: MyString
+  colorspeed: MyString
+  connectivity: MyString
+  duplex: MyString
+  maxdutycycle: MyString
+  inputcapacity: MyString
+  mediasize: MyString
+  processor: MyString
+  memory: MyString
+  function: MyString
+  copy: MyString
+  fax: MyString
+  capability: MyString
+  scanner: MyString
+  scanresolution: MyString
+  autodocumentfeeder: MyString
+  powerconsumption: MyText
+  dimensions: MyString
+  weight: MyString
+  cartridges: MyString
+  warranty: MyText
+  other: MyText

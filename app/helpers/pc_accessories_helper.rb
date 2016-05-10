@@ -1,0 +1,2 @@
+module PcAccessoriesHelper
+end

@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  cameramodel: MyText
+  details: MyText
+  imagesensor: MyText
+  whitebalance: MyText
+  viewfinder: MyText
+  lcdmonitor: MyText
+  focus: MyText
+  exposure: MyText
+  shutter: MyText
+  flash: MyText
+  drive: MyText
+  function: MyText
+  recording: MyText
+  movie: MyText
+  lens: MyText
+  other: MyText
+  warranty: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  cameramodel: MyText
+  details: MyText
+  imagesensor: MyText
+  whitebalance: MyText
+  viewfinder: MyText
+  lcdmonitor: MyText
+  focus: MyText
+  exposure: MyText
+  shutter: MyText
+  flash: MyText
+  drive: MyText
+  function: MyText
+  recording: MyText
+  movie: MyText
+  lens: MyText
+  other: MyText
+  warranty: MyText

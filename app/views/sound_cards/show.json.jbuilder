@@ -1,0 +1,1 @@
+json.extract! @sound_card, :id, :name, :price, :code, :brand, :model, :chipset, :channels, :samplerate, :digitalaudio, :snr, :linein, :lineout, :spdif, :mic, :auxport, :otherport, :interface, :os, :systemrequirements, :features, :dimension, :weight, :packagecontents, :plug, :other, :created_at, :updated_at

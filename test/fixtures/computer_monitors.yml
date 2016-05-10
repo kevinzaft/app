@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  price: MyString
+  brand: MyString
+  monitormodel: MyString
+  monitortype: MyString
+  paneltype: MyString
+  display: MyString
+  resolution: MyString
+  ratio: MyString
+  response: MyString
+  contrast: MyString
+  brightness: MyString
+  displaycolors: MyString
+  inputconnector: MyString
+  touchscreen: MyString
+  threed: MyString
+  builtinspeaker: MyString
+  usb: MyString
+  tvtuner: MyString
+  power: MyString
+  heightadjustable: MyString
+  tilt: MyString
+  dimensions: MyString
+  weight: MyString
+  warranty: MyString
+
+two:
+  name: MyString
+  code: MyString
+  price: MyString
+  brand: MyString
+  monitormodel: MyString
+  monitortype: MyString
+  paneltype: MyString
+  display: MyString
+  resolution: MyString
+  ratio: MyString
+  response: MyString
+  contrast: MyString
+  brightness: MyString
+  displaycolors: MyString
+  inputconnector: MyString
+  touchscreen: MyString
+  threed: MyString
+  builtinspeaker: MyString
+  usb: MyString
+  tvtuner: MyString
+  power: MyString
+  heightadjustable: MyString
+  tilt: MyString
+  dimensions: MyString
+  weight: MyString
+  warranty: MyString

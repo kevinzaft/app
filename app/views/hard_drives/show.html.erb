@@ -1,0 +1,24 @@
+
+<h1><%= @hard_drive.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @hard_drive.code %> <br>	
+  	<%= @hard_drive.drivetype %> <br>
+  	<%= @hard_drive.capacity%> <br>
+  	<%= @hard_drive.color%> <br>
+  	<%= @hard_drive.dimensions%> <br>
+  	<%= @hard_drive.weight%> <br>
+  	<%= @hard_drive.interface%> <br>
+    <%= @hard_drive.texture%> <br>
+    <%= @hard_drive.warranty%> <br>
+    <%= @hard_drive.voltage%> <br>
+    <%= @hard_drive.requirements%> <br>
+    <%= @hard_drive.accessories%> <br>
+    <%= @hard_drive.temperature%> <br>
+  	<%= @hard_drive.price %> <br>
+  </span> 
+  </pre>
+  <a href="/hard_drives/<%= @hard_drive.id %>/edit">Edit</a>
+</p>
+

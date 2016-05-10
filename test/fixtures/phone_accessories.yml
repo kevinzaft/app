@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  accessorymodel: MyString
+  accessorytype: MyString
+  compatiblilty: MyText
+  features: MyText
+  dimensions: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  accessorymodel: MyString
+  accessorytype: MyString
+  compatiblilty: MyText
+  features: MyText
+  dimensions: MyText
+  other: MyText

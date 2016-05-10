@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surveillance Cables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surveillance_cables.each do |surveillance_cable| %>
+      <tr>
+        <td><%= surveillance_cable.name %></td>
+        <td><%= surveillance_cable.price %></td>
+       
+        <td><%= link_to 'Show', surveillance_cable %></td>
+        <td><%= link_to 'Edit', edit_surveillance_cable_path(surveillance_cable) %></td>
+        <td><%= link_to 'Destroy', surveillance_cable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surveillance cable', new_surveillance_cable_path %>

@@ -1,0 +1,10 @@
+<h1>Burners and Readers</h1>
+<a href="/burner_readers/new" class="new_burner_reader_link">New Product </a>
+<% @burner_readers.each do |burner_reader| %>
+  <h2><%= burner_reader.name %></h2>
+  <p>
+    <%= burner_reader.price %>
+  </p>
+  <%= link_to "View full Product", burner_reader %>
+  <a href="/burner_readers/<%= burner_reader.id %>" data-method="delete">Destroy</a>
+<% end %>

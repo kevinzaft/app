@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @security.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @security.price %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @security.code %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @security.brand %>
+</p>
+
+<p>
+  <strong>Brandmodel:</strong>
+  <%= @security.brandmodel %>
+</p>
+
+<p>
+  <strong>Securitytype:</strong>
+  <%= @security.securitytype %>
+</p>
+
+<p>
+  <strong>Systemrequirements:</strong>
+  <%= @security.systemrequirements %>
+</p>
+
+<p>
+  <strong>Features:</strong>
+  <%= @security.features %>
+</p>
+
+<p>
+  <strong>Warranty:</strong>
+  <%= @security.warranty %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @security.other %>
+</p>
+
+<%= link_to 'Edit', edit_security_path(@security) %> |
+<%= link_to 'Back', securities_path %>

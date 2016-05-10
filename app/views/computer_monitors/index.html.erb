@@ -1,0 +1,10 @@
+<h1>Computer Monitor</h1>
+<a href="/computer_monitors/new" class="new_computer_link">New Product </a>
+<% @computer_monitors.each do |computer_monitor| %>
+  <h2><%= computer_monitor.name %></h2>
+  <p>
+    <%= computer_monitor.price %>
+  </p>
+  <%= link_to "View full Product", computer_monitor %>
+  <a href="/computer_monitors/<%= computer_monitor.id %>" data-method="delete">Destroy</a>
+<% end %>

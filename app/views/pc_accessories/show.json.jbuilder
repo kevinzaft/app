@@ -1,0 +1,1 @@
+json.extract! @pc_accessory, :id, :name, :price, :code, :brand, :brandmodel, :casetype, :color, :fitmostscreensize, :capacity, :features, :dimensions, :weight, :warranty, :other, :created_at, :updated_at

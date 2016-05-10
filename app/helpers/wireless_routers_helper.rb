@@ -1,0 +1,2 @@
+module WirelessRoutersHelper
+end

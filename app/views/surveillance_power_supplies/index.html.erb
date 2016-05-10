@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surveillance Power Supplies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surveillance_power_supplies.each do |surveillance_power_supply| %>
+      <tr>
+        <td><%= surveillance_power_supply.name %></td>
+        <td><%= surveillance_power_supply.price %></td>
+        
+        <td><%= link_to 'Show', surveillance_power_supply %></td>
+        <td><%= link_to 'Edit', edit_surveillance_power_supply_path(surveillance_power_supply) %></td>
+        <td><%= link_to 'Destroy', surveillance_power_supply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surveillance power supply', new_surveillance_power_supply_path %>

@@ -1,0 +1,2 @@
+module NetworkCamerasHelper
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Modems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @modems.each do |modem| %>
+      <tr>
+        <td><%= modem.name %></td>
+        <td><%= modem.price %></td>
+        <td><%= link_to 'Show', modem %></td>
+        <td><%= link_to 'Edit', edit_modem_path(modem) %></td>
+        <td><%= link_to 'Destroy', modem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Modem', new_modem_path %>

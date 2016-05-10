@@ -1,0 +1,121 @@
+<%= form_for(@server) do |f| %>
+  <% if @server.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@server.errors.count, "error") %> prohibited this server from being saved:</h2>
+
+      <ul>
+      <% @server.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :series %><br>
+    <%= f.text_field :series %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :server_type %><br>
+    <%= f.text_field :servertype %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_type %><br>
+    <%= f.text_field :cputype %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_socket %><br>
+    <%= f.text_field :cpusocket %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_cpu_cores %><br>
+    <%= f.text_field :numberofcpucores %>
+  </div>
+  <div class="field">
+    <%= f.label :cache_memory %><br>
+    <%= f.text_field :cachememory %>
+  </div>
+  <div class="field">
+    <%= f.label :installed_memory_size %><br>
+    <%= f.text_field :installedmemorysize %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_type %><br>
+    <%= f.text_field :memorytype %>
+  </div>
+  <div class="field">
+    <%= f.label :max_memory_capacity %><br>
+    <%= f.text_field :maxmemorycapacity %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_features %><br>
+    <%= f.text_area :memoryfeatures %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_memory_slots %><br>
+    <%= f.text_field :numberofmemoryslots %>
+  </div>
+  <div class="field">
+    <%= f.label :hard_drive %><br>
+    <%= f.text_field :harddrive %>
+  </div>
+  <div class="field">
+    <%= f.label :raid_level %><br>
+    <%= f.text_field :raidlevel %>
+  </div>
+  <div class="field">
+    <%= f.label :media_drives %><br>
+    <%= f.text_field :mediadrives %>
+  </div>
+  <div class="field">
+    <%= f.label :expansion_slot %><br>
+    <%= f.text_field :expansionslot %>
+  </div>
+  <div class="field">
+    <%= f.label :expansion_bays %><br>
+    <%= f.text_field :expansionbays %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :power_characteristics %><br>
+    <%= f.text_field :powercharacteristics %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

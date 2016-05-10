@@ -1,0 +1,1 @@
+json.extract! @speaker, :id, :name, :price, :code, :brand, :brandmodel, :speakertype, :speakerconfig, :power, :frequency, :systemrequirements, :dimensions, :weight, :features, :packagecontents, :plug, :warranty, :other, :created_at, :updated_at

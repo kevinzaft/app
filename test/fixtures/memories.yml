@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  price: MyString
+  memorytype: MyString
+  brand: MyString
+  mpn: MyString
+  manufacturer: MyString
+  website: MyString
+  marketinginfo: MyText
+  productline: MyString
+  producttype: MyString
+  errorchecking: MyString
+  memorysize: MyString
+  memoryspeed: MyString
+  memorystandard: MyString
+  memorytech: MyString
+  signalprocessing: MyString
+  formfactor: MyString
+  length: MyString
+  pins: MyString
+  width: MyString
+  caslatency: MyString
+  voltage: MyString
+  modules: MyString
+
+two:
+  name: MyString
+  code: MyString
+  price: MyString
+  memorytype: MyString
+  brand: MyString
+  mpn: MyString
+  manufacturer: MyString
+  website: MyString
+  marketinginfo: MyText
+  productline: MyString
+  producttype: MyString
+  errorchecking: MyString
+  memorysize: MyString
+  memoryspeed: MyString
+  memorystandard: MyString
+  memorytech: MyString
+  signalprocessing: MyString
+  formfactor: MyString
+  length: MyString
+  pins: MyString
+  width: MyString
+  caslatency: MyString
+  voltage: MyString
+  modules: MyString

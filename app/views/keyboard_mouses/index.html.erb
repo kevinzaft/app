@@ -1,0 +1,10 @@
+<h1>Keyboard and Mouses</h1>
+<a href="/keyboard_mouses/new" class="new_computer_link">New Product </a>
+<% @keyboard_mouses.each do |keyboard_mouse| %>
+  <h2><%= keyboard_mouse.name %></h2>
+  <p>
+    <%= keyboard_mouse.price %>
+  </p>
+  <%= link_to "View full Product", keyboard_mouse %>
+  <a href="/keyboard_mouses/<%= keyboard_mouse.id %>" data-method="delete">Destroy</a>
+<% end %>

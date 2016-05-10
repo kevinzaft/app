@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  cputype: MyString
+  essentials: MyText
+  performance: MyText
+  memoryspec: MyText
+  graphicsspec: MyText
+  expansion: MyText
+  packagespec: MyText
+  advanced: MyText
+  dataprotection: MyText
+  platformprotection: MyText
+
+two:
+  name: MyString
+  code: MyString
+  cputype: MyString
+  essentials: MyText
+  performance: MyText
+  memoryspec: MyText
+  graphicsspec: MyText
+  expansion: MyText
+  packagespec: MyText
+  advanced: MyText
+  dataprotection: MyText
+  platformprotection: MyText

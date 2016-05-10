@@ -1,0 +1,10 @@
+<h1>Motherboard</h1>
+<a href="/motherboards/new" class="new_computer_link">New Product </a>
+<% @motherboards.each do |motherboard| %>
+  <h2><%= motherboard.name %></h2>
+  <p>
+    <%= motherboard.price %>
+  </p>
+  <%= link_to "View full Product", motherboard %>
+  <a href="/motherboards/<%= motherboard.id %>" data-method="delete">Destroy</a>
+<% end %>

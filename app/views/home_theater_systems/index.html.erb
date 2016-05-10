@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Home Theater Systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @home_theater_systems.each do |home_theater_system| %>
+      <tr>
+        <td><%= home_theater_system.name %></td>
+        <td><%= home_theater_system.price %></td>
+        <td><%= link_to 'Show', home_theater_system %></td>
+        <td><%= link_to 'Edit', edit_home_theater_system_path(home_theater_system) %></td>
+        <td><%= link_to 'Destroy', home_theater_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Home theater system', new_home_theater_system_path %>

@@ -1,0 +1,85 @@
+<%= form_for(@speaker) do |f| %>
+  <% if @speaker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@speaker.errors.count, "error") %> prohibited this speaker from being saved:</h2>
+
+      <ul>
+      <% @speaker.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :brand_model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :speaker_type %><br>
+    <%= f.text_field :speakertype %>
+  </div>
+  <div class="field">
+    <%= f.label :speaker_config %><br>
+    <%= f.text_field :speakerconfig %>
+  </div>
+  <div class="field">
+    <%= f.label :power %><br>
+    <%= f.text_field :power %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency %><br>
+    <%= f.text_field :frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :system_requirements %><br>
+    <%= f.text_area :systemrequirements %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_area :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :package_contents %><br>
+    <%= f.text_area :packagecontents %>
+  </div>
+  <div class="field">
+    <%= f.label :plug %><br>
+    <%= f.text_field :plug %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

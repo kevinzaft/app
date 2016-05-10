@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cd Media</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cd_media.each do |cd_medium| %>
+      <tr>
+        <td><%= cd_medium.name %></td>
+        <td><%= cd_medium.price %></td>
+
+        <td><%= link_to 'Show', cd_medium %></td>
+        <td><%= link_to 'Edit', edit_cd_medium_path(cd_medium) %></td>
+        <td><%= link_to 'Destroy', cd_medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cd medium', new_cd_medium_path %>

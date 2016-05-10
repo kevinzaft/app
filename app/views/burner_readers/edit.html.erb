@@ -1,0 +1,135 @@
+<h1>Edit</h1>
+
+<%= form_for(@burner_reader) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :product_model %><br />
+    <%= f.text_field :productmodel, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CD_plus_ROM %><br />
+    <%= f.text_field :cdrom, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_plus_rom %><br />
+    <%= f.text_field :dvdrom, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :drive_type %><br />
+    <%= f.text_field :drivetype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_plus_r %><br />
+    <%= f.text_field :dvdr, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_plus_r_dl %><br />
+    <%= f.text_field :dvdrdl, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_r %><br />
+    <%= f.text_field :dvdmr, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_r_dl %><br />
+    <%= f.text_field :dvdmrdl, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_plus_rw %><br />
+    <%= f.text_field :dvdrw, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_rw %><br />
+    <%= f.text_field :dvdmrw, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_ram %><br />
+    <%= f.text_field :dvdmram, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cd_dash_r %><br />
+    <%= f.text_field :cdmr, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cd_dash_rw %><br />
+    <%= f.text_field :cdmrw, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_plus_r %><br />
+    <%= f.text_field :dvdzr, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_plus_r_dl %><br />
+    <%= f.text_field :dvdzrdl, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dvd_dash_plus_rw %><br />
+    <%= f.text_field :dvdzrw, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :operating_system %><br />
+    <%= f.text_field :os, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :buffer_size %><br />
+    <%= f.text_field :buffer, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :m_dash_disk_plus_m %><br />
+    <%= f.text_field :disc, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cd_da %><br />
+    <%= f.text_field :cdda, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :eithty_mm_cd %><br />
+    <%= f.text_field :mmcd, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Other %><br />
+    <%= f.text_area :other, cols: "150", rows: "10" %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

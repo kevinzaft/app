@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  series: MyString
+  brandmodel: MyString
+  servertype: MyString
+  cputype: MyString
+  cpusocket: MyString
+  numberofcpucores: MyString
+  cachememory: MyString
+  installedmemorysize: MyString
+  memorytype: MyString
+  maxmemorycapacity: MyString
+  memoryfeatures: MyText
+  numberofmemoryslots: MyString
+  harddrive: MyString
+  raidlevel: MyString
+  mediadrives: MyString
+  expansionslot: MyString
+  expansionbays: MyString
+  os: MyString
+  powercharacteristics: MyString
+  weight: MyString
+  warranty: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  series: MyString
+  brandmodel: MyString
+  servertype: MyString
+  cputype: MyString
+  cpusocket: MyString
+  numberofcpucores: MyString
+  cachememory: MyString
+  installedmemorysize: MyString
+  memorytype: MyString
+  maxmemorycapacity: MyString
+  memoryfeatures: MyText
+  numberofmemoryslots: MyString
+  harddrive: MyString
+  raidlevel: MyString
+  mediadrives: MyString
+  expansionslot: MyString
+  expansionbays: MyString
+  os: MyString
+  powercharacteristics: MyString
+  weight: MyString
+  warranty: MyText
+  other: MyText

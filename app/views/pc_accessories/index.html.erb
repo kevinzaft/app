@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pc Accessories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pc_accessories.each do |pc_accessory| %>
+      <tr>
+        <td><%= pc_accessory.name %></td>
+        <td><%= pc_accessory.price %></td>
+        <td><%= link_to 'Show', pc_accessory %></td>
+        <td><%= link_to 'Edit', edit_pc_accessory_path(pc_accessory) %></td>
+        <td><%= link_to 'Destroy', pc_accessory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pc accessory', new_pc_accessory_path %>

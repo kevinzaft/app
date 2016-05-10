@@ -1,0 +1,169 @@
+<%= form_for(@video_card) do |f| %>
+  <% if @video_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@video_card.errors.count, "error") %> prohibited this video_card from being saved:</h2>
+
+      <ul>
+      <% @video_card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :video_card_type %><br>
+    <%= f.text_field :videocardtype %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :card_model %><br>
+    <%= f.text_field :cardmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :interface %><br>
+    <%= f.text_field :interface %>
+  </div>
+  <div class="field">
+    <%= f.label :chipset_manufacturer %><br>
+    <%= f.text_field :chipsetmanufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :gpu %><br>
+    <%= f.text_field :gpu %>
+  </div>
+  <div class="field">
+    <%= f.label :core_clock %><br>
+    <%= f.text_area :coreclock %>
+  </div>
+  <div class="field">
+    <%= f.label :boost_clock %><br>
+    <%= f.text_area :boostclock %>
+  </div>
+  <div class="field">
+    <%= f.label :cuda_cores %><br>
+    <%= f.text_area :cudacores %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_clock %><br>
+    <%= f.text_field :memoryclock %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_size %><br>
+    <%= f.text_field :memorysize %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_interface %><br>
+    <%= f.text_field :memoryinterface %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_type %><br>
+    <%= f.text_field :memorytype %>
+  </div>
+  <div class="field">
+    <%= f.label :directx %><br>
+    <%= f.text_field :directx %>
+  </div>
+  <div class="field">
+    <%= f.label :opengl %><br>
+    <%= f.text_field :opengl %>
+  </div>
+  <div class="field">
+    <%= f.label :hdmi_port %><br>
+    <%= f.text_field :hdmiport %>
+  </div>
+  <div class="field">
+    <%= f.label :multi_monitor_support %><br>
+    <%= f.text_field :multimonitorsupport %>
+  </div>
+  <div class="field">
+    <%= f.label :display_port %><br>
+    <%= f.text_field :displayport %>
+  </div>
+  <div class="field">
+    <%= f.label :dvi %><br>
+    <%= f.text_area :dvi %>
+  </div>
+  <div class="field">
+    <%= f.label :ramdac %><br>
+    <%= f.text_field :ramdac %>
+  </div>
+  <div class="field">
+    <%= f.label :max_resolution %><br>
+    <%= f.text_field :maxres %>
+  </div>
+  <div class="field">
+    <%= f.label "3D vision ready" %><br>
+    <%= f.text_field :threedvisionready %>
+  </div>
+  <div class="field">
+    <%= f.label :sli_support %><br>
+    <%= f.text_field :slisupport %>
+  </div>
+  <div class="field">
+    <%= f.label :virtual_reality_ready %><br>
+    <%= f.text_field :virtualrealityready %>
+  </div>
+  <div class="field">
+    <%= f.label :cooler %><br>
+    <%= f.text_field :cooler %>
+  </div>
+  <div class="field">
+    <%= f.label :system_requirements %><br>
+    <%= f.text_area :systemrequirements %>
+  </div>
+  <div class="field">
+    <%= f.label :power_connector %><br>
+    <%= f.text_field :powerconnector %>
+  </div>
+  <div class="field">
+    <%= f.label :dual_link_dvi %><br>
+    <%= f.text_field :duallinkdvi %>
+  </div>
+  <div class="field">
+    <%= f.label :hdcp_ready %><br>
+    <%= f.text_field :hdcpready %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :slot_width %><br>
+    <%= f.text_field :slotwidth %>
+  </div>
+  <div class="field">
+    <%= f.label :package %><br>
+    <%= f.text_area :package %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

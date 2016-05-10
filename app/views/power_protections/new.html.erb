@@ -1,0 +1,60 @@
+<h1>New Power Protection</h1>
+
+<%= form_for(@power_protection) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :pptype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :general %><br />
+    <%= f.text_field :general, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :technical %><br />
+    <%= f.text_field :technical, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :battery %><br />
+    <%= f.text_field :battery, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :power %><br />
+    <%= f.text_field :power, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :physical %><br />
+    <%= f.text_field :physical, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :warranty %><br />
+    <%= f.text_field :warranty, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.text_field :other, cols: "150", rows: "10" %>
+  </div>
+  
+  <%= f.submit %>
+<% end %>

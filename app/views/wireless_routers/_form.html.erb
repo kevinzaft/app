@@ -1,0 +1,137 @@
+<%= form_for(@wireless_router) do |f| %>
+  <% if @wireless_router.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wireless_router.errors.count, "error") %> prohibited this wireless_router from being saved:</h2>
+
+      <ul>
+      <% @wireless_router.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :standards %><br>
+    <%= f.text_field :standards %>
+  </div>
+  <div class="field">
+    <%= f.label :device_management %><br>
+    <%= f.text_field :devicemanagement %>
+  </div>
+  <div class="field">
+    <%= f.label :secrurity %><br>
+    <%= f.text_area :secrurity %>
+  </div>
+  <div class="field">
+    <%= f.label "wpa/wpa2" %><br>
+    <%= f.text_field :wpawpa2 %>
+  </div>
+  <div class="field">
+    <%= f.label :wan_ports %><br>
+    <%= f.text_field :wanports %>
+  </div>
+  <div class="field">
+    <%= f.label :lan_ports %><br>
+    <%= f.text_field :lanports %>
+  </div>
+  <div class="field">
+    <%= f.label :led %><br>
+    <%= f.text_field :led %>
+  </div>
+  <div class="field">
+    <%= f.label :buttons %><br>
+    <%= f.text_field :buttons %>
+  </div>
+  <div class="field">
+    <%= f.label :wireless_data_rates %><br>
+    <%= f.text_field :wirelessdatarates %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency_band %><br>
+    <%= f.text_field :frequencyband %>
+  </div>
+  <div class="field">
+    <%= f.label :antenna %><br>
+    <%= f.text_field :antenna %>
+  </div>
+  <div class="field">
+    <%= f.label :channels %><br>
+    <%= f.text_field :channels %>
+  </div>
+  <div class="field">
+    <%= f.label :transmitted_power %><br>
+    <%= f.text_field :transmittedpower %>
+  </div>
+  <div class="field">
+    <%= f.label :interface %><br>
+    <%= f.text_field :interface %>
+  </div>
+  <div class="field">
+    <%= f.label :power_adapter %><br>
+    <%= f.text_field :poweradapter %>
+  </div>
+  <div class="field">
+    <%= f.label :wireless_adapter_incuded %><br>
+    <%= f.text_field :wirelessadapterincuded %>
+  </div>
+  <div class="field">
+    <%= f.label :system_requirements %><br>
+    <%= f.text_area :systemrequirements %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :temperature %><br>
+    <%= f.text_area :temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :humidity %><br>
+    <%= f.text_field :humidity %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :package %><br>
+    <%= f.text_area :package %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

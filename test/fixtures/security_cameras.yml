@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  color: MyString
+  securitycameratype: MyString
+  cameratype: MyString
+  wirelessdatarate: MyString
+  sensor: MyString
+  maxres: MyString
+  videocaptureres: MyString
+  lenstype: MyString
+  shuttercontrol: MyString
+  nightvision: MyString
+  features: MyText
+  package: MyText
+  warranty: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  color: MyString
+  securitycameratype: MyString
+  cameratype: MyString
+  wirelessdatarate: MyString
+  sensor: MyString
+  maxres: MyString
+  videocaptureres: MyString
+  lenstype: MyString
+  shuttercontrol: MyString
+  nightvision: MyString
+  features: MyText
+  package: MyText
+  warranty: MyText
+  other: MyText

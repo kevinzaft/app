@@ -1,0 +1,1 @@
+json.extract! @tv_tuner, :id, :name, :price, :code, :brand, :model, :type, :tvtuner, :tvstandards, :remotecontrol, :videoencoding, :tunerinterface, :lowprofileready, :fmtuner, :videoformat, :portsin, :systemrequirments, :processor, :graphicscard, :availableslot, :os, :features, :packagecontent, :other, :created_at, :updated_at

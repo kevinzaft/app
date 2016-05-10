@@ -1,0 +1,97 @@
+<%= form_for(@camera) do |f| %>
+  <% if @camera.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@camera.errors.count, "error") %> prohibited this camera from being saved:</h2>
+
+      <ul>
+      <% @camera.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :cameramodel %><br>
+    <%= f.text_area :cameramodel %>
+  </div>
+  <div class="field">
+    <%= f.label :details %><br>
+    <%= f.text_area :details %>
+  </div>
+  <div class="field">
+    <%= f.label :imagesensor %><br>
+    <%= f.text_area :imagesensor %>
+  </div>
+  <div class="field">
+    <%= f.label :whitebalance %><br>
+    <%= f.text_area :whitebalance %>
+  </div>
+  <div class="field">
+    <%= f.label :viewfinder %><br>
+    <%= f.text_area :viewfinder %>
+  </div>
+  <div class="field">
+    <%= f.label :lcdmonitor %><br>
+    <%= f.text_area :lcdmonitor %>
+  </div>
+  <div class="field">
+    <%= f.label :focus %><br>
+    <%= f.text_area :focus %>
+  </div>
+  <div class="field">
+    <%= f.label :exposure %><br>
+    <%= f.text_area :exposure %>
+  </div>
+  <div class="field">
+    <%= f.label :shutter %><br>
+    <%= f.text_area :shutter %>
+  </div>
+  <div class="field">
+    <%= f.label :flash %><br>
+    <%= f.text_area :flash %>
+  </div>
+  <div class="field">
+    <%= f.label :drive %><br>
+    <%= f.text_area :drive %>
+  </div>
+  <div class="field">
+    <%= f.label :function %><br>
+    <%= f.text_area :function %>
+  </div>
+  <div class="field">
+    <%= f.label :recording %><br>
+    <%= f.text_area :recording %>
+  </div>
+  <div class="field">
+    <%= f.label :movie %><br>
+    <%= f.text_area :movie %>
+  </div>
+  <div class="field">
+    <%= f.label :lens %><br>
+    <%= f.text_area :lens %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

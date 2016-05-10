@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  pptype: MyString
+  price: MyString
+  code: MyString
+  general: MyText
+  technical: MyText
+  battery: MyText
+  power: MyText
+  physical: MyText
+  warranty: MyString
+
+two:
+  name: MyString
+  pptype: MyString
+  price: MyString
+  code: MyString
+  general: MyText
+  technical: MyText
+  battery: MyText
+  power: MyText
+  physical: MyText
+  warranty: MyString

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  drivetype: MyString
+  code: MyString
+  price: MyString
+  drivemodel: MyText
+  performance: MyText
+  physicalspec: MyText
+  otherspec: MyText
+  features: MyText
+  packaging: MyText
+
+two:
+  name: MyString
+  drivetype: MyString
+  code: MyString
+  price: MyString
+  drivemodel: MyText
+  performance: MyText
+  physicalspec: MyText
+  otherspec: MyText
+  features: MyText
+  packaging: MyText

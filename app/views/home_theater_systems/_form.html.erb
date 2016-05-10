@@ -1,0 +1,65 @@
+<%= form_for(@home_theater_system) do |f| %>
+  <% if @home_theater_system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@home_theater_system.errors.count, "error") %> prohibited this home_theater_system from being saved:</h2>
+
+      <ul>
+      <% @home_theater_system.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :homemodel %><br>
+    <%= f.text_field :homemodel %>
+  </div>
+  <div class="field">
+    <%= f.label :channels %><br>
+    <%= f.text_field :channels %>
+  </div>
+  <div class="field">
+    <%= f.label :speakerpowerrating %><br>
+    <%= f.text_field :speakerpowerrating %>
+  </div>
+  <div class="field">
+    <%= f.label :speakerfrequency %><br>
+    <%= f.text_field :speakerfrequency %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_area :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

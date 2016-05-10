@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  price: MyString
+  serial: MyText
+  driver: MyText
+  regulatory: MyText
+  operating: MyText
+  package: MyText
+
+two:
+  name: MyString
+  code: MyString
+  price: MyString
+  serial: MyText
+  driver: MyText
+  regulatory: MyText
+  operating: MyText
+  package: MyText

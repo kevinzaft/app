@@ -1,0 +1,125 @@
+<h1>Edit</h1>
+
+<%= form_for(@memory) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+   <div class="field">
+    <%= f.label :memory_type %><br />
+    <%= f.text_field :memorytype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Manufacturer part number"%><br />
+    <%= f.text_field :mpn, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manufacturer %><br />
+    <%= f.text_field :manufacturer, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :productline %><br />
+    <%= f.text_field :productline, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :producttype %><br />
+    <%= f.text_field :producttype, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :errorchecking %><br />
+    <%= f.text_field :errorchecking, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memorysize %><br />
+    <%= f.text_field :memorysize, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memoryspeed %><br />
+    <%= f.text_field :memoryspeed, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memorystandard %><br />
+    <%= f.text_field :memorystandard, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Memory Technology" %><br />
+    <%= f.text_field :memorytech, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :signal_processing %><br />
+    <%= f.text_field :signalprocessing cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :form_factor %><br />
+    <%= f.text_field :formfactor, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_of_pins %><br />
+    <%= f.text_field ::pins, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cas_latency %><br />
+    <%= f.text_field :caslatency, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage %><br />
+    <%= f.text_field :voltage, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :modules %><br />
+    <%= f.text_field :modules, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :marketinginfo %><br />
+    <%= f.text_area :marketinginfo, cols: "150", rows: "10" %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

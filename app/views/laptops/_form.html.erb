@@ -1,0 +1,201 @@
+<%= form_for(@laptop) do |f| %>
+  <% if @laptop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@laptop.errors.count, "error") %> prohibited this laptop from being saved:</h2>
+
+      <ul>
+      <% @laptop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :series %><br>
+    <%= f.text_field :series %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :part_number %><br>
+    <%= f.text_field :partnumber %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_type %><br>
+    <%= f.text_field :cputype %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_speed %><br>
+    <%= f.text_field :cpuspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :core_name %><br>
+    <%= f.text_field :corename %>
+  </div>
+  <div class="field">
+    <%= f.label :turbo_frequency %><br>
+    <%= f.text_field :turbofrequency %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_cores %><br>
+    <%= f.text_field :numberofcores %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_l3_cache %><br>
+    <%= f.text_field :cpul3cache %>
+  </div>
+  <div class="field">
+    <%= f.label :screen_size %><br>
+    <%= f.text_field :screensize %>
+  </div>
+  <div class="field">
+    <%= f.label :touchscreen %><br>
+    <%= f.text_field :touchscreen %>
+  </div>
+  <div class="field">
+    <%= f.label :widescreen_support %><br>
+    <%= f.text_field :widescreensupport %>
+  </div>
+  <div class="field">
+    <%= f.label :resolution %><br>
+    <%= f.text_field :resolution %>
+  </div>
+  <div class="field">
+    <%= f.label :lcd_features %><br>
+    <%= f.text_field :lcdfeatures %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :gpu_vpu %><br>
+    <%= f.text_field :gpuvpu %>
+  </div>
+  <div class="field">
+    <%= f.label :video_memory %><br>
+    <%= f.text_field :videomemory %>
+  </div>
+  <div class="field">
+    <%= f.label :graphic_type %><br>
+    <%= f.text_field :graphictype %>
+  </div>
+  <div class="field">
+    <%= f.label :hdd %><br>
+    <%= f.text_field :hdd %>
+  </div>
+  <div class="field">
+    <%= f.label :hdd_rpm %><br>
+    <%= f.text_field :hddrpm %>
+  </div>
+  <div class="field">
+    <%= f.label :memory %><br>
+    <%= f.text_field :memory %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_speed %><br>
+    <%= f.text_field :memoryspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_spec %><br>
+    <%= f.text_field :memoryspec %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_slot_total %><br>
+    <%= f.text_field :memoryslottotal %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_slot_available %><br>
+    <%= f.text_field :memoryslotavailable %>
+  </div>
+  <div class="field">
+    <%= f.label :max_memory_supported %><br>
+    <%= f.text_field :maxmemorysupported %>
+  </div>
+  <div class="field">
+    <%= f.label :optical_drive_type %><br>
+    <%= f.text_field :opticaldrivetype %>
+  </div>
+  <div class="field">
+    <%= f.label :wlan %><br>
+    <%= f.text_field :wlan %>
+  </div>
+  <div class="field">
+    <%= f.label :bluetooth %><br>
+    <%= f.text_field :bluetooth %>
+  </div>
+  <div class="field">
+    <%= f.label :usb_ports %><br>
+    <%= f.text_field :usbports %>
+  </div>
+  <div class="field">
+    <%= f.label :video_ports %><br>
+    <%= f.text_field :videoports %>
+  </div>
+  <div class="field">
+    <%= f.label :hdmi %><br>
+    <%= f.text_field :hdmi %>
+  </div>
+  <div class="field">
+    <%= f.label :audio_ports %><br>
+    <%= f.text_field :audioports %>
+  </div>
+  <div class="field">
+    <%= f.label :webcam %><br>
+    <%= f.text_field :webcam %>
+  </div>
+  <div class="field">
+    <%= f.label :card_reader %><br>
+    <%= f.text_field :cardreader %>
+  </div>
+  <div class="field">
+    <%= f.label :battery %><br>
+    <%= f.text_field :battery %>
+  </div>
+  <div class="field">
+    <%= f.label :battery_life %><br>
+    <%= f.text_field :batterylife %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

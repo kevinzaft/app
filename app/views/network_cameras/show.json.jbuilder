@@ -1,0 +1,1 @@
+json.extract! @network_camera, :id, :name, :price, :code, :brand, :brandmodel, :cameratype, :connectiontype, :wirelessstandard, :wirelessdatarate, :ports, :networkingprotocol, :zoom, :sensor, :maxres, :videocaptureres, :framerate, :lenstype, :security, :os, :features, :warranty, :other, :created_at, :updated_at

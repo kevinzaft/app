@@ -1,0 +1,1 @@
+json.extract! @karaoke_speaker, :id, :name, :price, :code, :brand, :brandmodel, :type, :soldas, :driverunits, :frequencyresponse, :nominalimpedance, :sensitivity, :features, :dimensions, :weight, :other, :warranty, :created_at, :updated_at

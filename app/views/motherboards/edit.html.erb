@@ -1,0 +1,130 @@
+<h1>Edit</h1>
+
+<%= form_for(@motherboard) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :motherboard_type %><br />
+    <%= f.text_field :motherboardtype, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :form_factor %><br />
+    <%= f.text_field :formfactor, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cpu %><br />
+    <%= f.text_area :cpu, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :chipset %><br />
+    <%= f.text_field :chipset, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memory %><br />
+    <%= f.text_area :memory, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :graphic %><br />
+    <%= f.text_area :graphic, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :multi_gpu %><br />
+    <%= f.text_field :multigpu, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expansion %><br />
+    <%= f.text_area :expansion, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :storage %><br />
+    <%= f.text_area :storage, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lan %><br />
+    <%= f.text_area :lan, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :audio %><br />
+    <%= f.text_area :audio, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :usb %><br />
+    <%= f.text_area :usb, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :work_station %><br />
+    <%= f.text_area :workstation, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :special %><br />
+    <%= f.text_area :special, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :backio %><br />
+    <%= f.text_area :backio, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :internalio %><br />
+    <%= f.text_area :internalio, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :accessories %><br />
+    <%= f.text_area :accessories, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bios %><br />
+    <%= f.text_area :bios, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manageability %><br />
+    <%= f.text_field :manageability, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :supportdisc %><br />
+    <%= f.text_field :supportdisc, :size => 150 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :os %><br />
+    <%= f.text_area :os, cols: "150", rows: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.text_area :other, cols: "150", rows: "10" %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

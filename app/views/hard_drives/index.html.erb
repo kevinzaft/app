@@ -1,0 +1,10 @@
+<h1>Hard Drives</h1>
+<a href="/hard_drives/new" class="new_computer_link">New Product </a>
+<% @hard_drives.each do |hard_drive| %>
+  <h2><%= hard_drive.name %></h2>
+  <p>
+    <%= hard_drive.price %>
+  </p>
+  <%= link_to "View full Product", hard_drive %>
+  <a href="/hard_drives/<%= hard_drive.id %>" data-method="delete">Destroy</a>
+<% end %>

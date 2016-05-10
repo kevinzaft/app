@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  price: 1
+  writesupport: MyText
+  readsupport: MyText
+  writespeed: MyText
+  readspeed: MyText
+  other: MyText
+  dimensions: MyText
+
+two:
+  name: MyString
+  code: MyString
+  price: 1
+  writesupport: MyText
+  readsupport: MyText
+  writespeed: MyText
+  readspeed: MyText
+  other: MyText
+  dimensions: MyText

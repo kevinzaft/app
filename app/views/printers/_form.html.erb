@@ -1,0 +1,141 @@
+<%= form_for(@printer) do |f| %>
+  <% if @printer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@printer.errors.count, "error") %> prohibited this printer from being saved:</h2>
+
+      <ul>
+      <% @printer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :printer_type %><br>
+    <%= f.text_field :printertype %>
+  </div>
+  <div class="field">
+    <%= f.label :print_technology %><br>
+    <%= f.text_field :printtechnology %>
+  </div>
+  <div class="field">
+    <%= f.label :output_type %><br>
+    <%= f.text_field :outputtype %>
+  </div>
+  <div class="field">
+    <%= f.label :resolution %><br>
+    <%= f.text_field :resolution %>
+  </div>
+  <div class="field">
+    <%= f.label :black_print_speed %><br>
+    <%= f.text_field :blackspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :color_print_speed %><br>
+    <%= f.text_field :colorspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :connectivity %><br>
+    <%= f.text_field :connectivity %>
+  </div>
+  <div class="field">
+    <%= f.label :duplex %><br>
+    <%= f.text_field :duplex %>
+  </div>
+  <div class="field">
+    <%= f.label :max_duty_cycle %><br>
+    <%= f.text_field :maxdutycycle %>
+  </div>
+  <div class="field">
+    <%= f.label :input_capacity %><br>
+    <%= f.text_field :inputcapacity %>
+  </div>
+  <div class="field">
+    <%= f.label :media_size %><br>
+    <%= f.text_field :mediasize %>
+  </div>
+  <div class="field">
+    <%= f.label :processor %><br>
+    <%= f.text_field :processor %>
+  </div>
+  <div class="field">
+    <%= f.label :memory %><br>
+    <%= f.text_field :memory %>
+  </div>
+  <div class="field">
+    <%= f.label :function %><br>
+    <%= f.text_field :function %>
+  </div>
+  <div class="field">
+    <%= f.label :copy %><br>
+    <%= f.text_field :copy %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br>
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :capability %><br>
+    <%= f.text_field :capability %>
+  </div>
+  <div class="field">
+    <%= f.label :scanner %><br>
+    <%= f.text_field :scanner %>
+  </div>
+  <div class="field">
+    <%= f.label :scan_resolution %><br>
+    <%= f.text_field :scanresolution %>
+  </div>
+  <div class="field">
+    <%= f.label :auto_document_feeder %><br>
+    <%= f.text_field :autodocumentfeeder %>
+  </div>
+  <div class="field">
+    <%= f.label :power_consumption %><br>
+    <%= f.text_area :powerconsumption %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :cartridges %><br>
+    <%= f.text_field :cartridges %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,69 @@
+<%= form_for(@home_office) do |f| %>
+  <% if @home_office.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@home_office.errors.count, "error") %> prohibited this home_office from being saved:</h2>
+
+      <ul>
+      <% @home_office.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :brandmodel %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :officetype %><br>
+    <%= f.text_field :officetype %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :systemrequirements %><br>
+    <%= f.text_area :systemrequirements %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

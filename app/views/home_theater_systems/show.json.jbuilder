@@ -1,0 +1,1 @@
+json.extract! @home_theater_system, :id, :name, :price, :code, :brand, :homemodel, :channels, :speakerpowerrating, :speakerfrequency, :features, :dimensions, :other, :warranty, :created_at, :updated_at

@@ -1,0 +1,1 @@
+json.extract! @bluray_storage, :id, :name, :price, :code, :brand, :brandmodel, :storagetype, :capacity, :maxspeedsupported, :quantity, :surfacetop, :features, :packaging, :other, :created_at, :updated_at

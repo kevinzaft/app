@@ -1,0 +1,10 @@
+<h1>Headsets</h1>
+<a href="/headsets/new" class="new_computer_link">New Product </a>
+<% @headsets.each do |headset| %>
+  <h2><%= headset.name %></h2>
+  <p>
+    <%= headset.price %>
+  </p>
+  <%= link_to "View full Product", headset %>
+  <a href="/headsets/<%= headset.id %>" data-method="delete">Destroy</a>
+<% end %>

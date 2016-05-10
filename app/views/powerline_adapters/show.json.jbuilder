@@ -1,0 +1,1 @@
+json.extract! @powerline_adapter, :id, :name, :price, :code, :brand, :brandmodel, :standards, :encryption, :ports, :led, :certifications, :powerlinespeeds, :connectiontype, :connectionspeeds, :kittype, :systemrequirements, :temperature, :humidity, :features, :dimensions, :weight, :other, :warranty, :created_at, :updated_at

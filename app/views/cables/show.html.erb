@@ -1,0 +1,14 @@
+
+<h1><%= @cable.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @cable.code %> <br>	
+  	<%= @cable.cabletype %> <br>
+  	<%= @cable.description%> <br>
+  	<%= @cable.price %> <br>
+  </span> 
+  </pre>
+  <a href="/cables/<%= @cable.id %>/edit">Edit</a>
+</p>
+

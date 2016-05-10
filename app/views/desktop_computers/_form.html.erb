@@ -1,0 +1,241 @@
+<%= form_for(@desktop_computer) do |f| %>
+  <% if @desktop_computer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@desktop_computer.errors.count, "error") %> prohibited this desktop_computer from being saved:</h2>
+
+      <ul>
+      <% @desktop_computer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :desktop_type %><br>
+    <%= f.text_field :desktoptype %>
+  </div>
+  <div class="field">
+    <%= f.label :usage %><br>
+    <%= f.text_field :usage %>
+  </div>
+  <div class="field">
+    <%= f.label :colors %><br>
+    <%= f.text_field :colors %>
+  </div>
+  <div class="field">
+    <%= f.label :processor %><br>
+    <%= f.text_field :processor %>
+  </div>
+  <div class="field">
+    <%= f.label :processor_main_features %><br>
+    <%= f.text_field :processormainfeatures %>
+  </div>
+  <div class="field">
+    <%= f.label :cache_per_processor %><br>
+    <%= f.text_field :cacheperprocessor %>
+  </div>
+  <div class="field">
+    <%= f.label :memory %><br>
+    <%= f.text_field :memory %>
+  </div>
+  <div class="field">
+    <%= f.label :storage %><br>
+    <%= f.text_field :storage %>
+  </div>
+  <div class="field">
+    <%= f.label :optical_drive %><br>
+    <%= f.text_field :opticaldrive %>
+  </div>
+  <div class="field">
+    <%= f.label :graphics %><br>
+    <%= f.text_field :graphics %>
+  </div>
+  <div class="field">
+    <%= f.label :audio %><br>
+    <%= f.text_field :audio %>
+  </div>
+  <div class="field">
+    <%= f.label :ethernet %><br>
+    <%= f.text_field :ethernet %>
+  </div>
+  <div class="field">
+    <%= f.label :power_supply %><br>
+    <%= f.text_field :powersupply %>
+  </div>
+  <div class="field">
+    <%= f.label :keyboard %><br>
+    <%= f.text_field :keyboard %>
+  </div>
+  <div class="field">
+    <%= f.label :mouse %><br>
+    <%= f.text_field :mouse %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br>
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :special_features %><br>
+    <%= f.text_area :specialfeatures %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_type %><br>
+    <%= f.text_field :cputype %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_speed %><br>
+    <%= f.text_field :cpuspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :l2_cache_per_cpu %><br>
+    <%= f.text_field :l2cachepercpu %>
+  </div>
+  <div class="field">
+    <%= f.label :l3_cache_per_cpu %><br>
+    <%= f.text_field :l3cachepercpu %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_socket_type %><br>
+    <%= f.text_field :cpusockettype %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_main_features %><br>
+    <%= f.text_area :cpumainfeatures %>
+  </div>
+  <div class="field">
+    <%= f.label :gpu_vga_type %><br>
+    <%= f.text_field :gpuvgatype %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_capacity %><br>
+    <%= f.text_field :memorycapacity %>
+  </div>
+  <div class="field">
+    <%= f.label :memorys_peed %><br>
+    <%= f.text_field :memoryspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_spec %><br>
+    <%= f.text_field :memoryspec %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_slot %><br>
+    <%= f.text_field :memoryslot %>
+  </div>
+  <div class="field">
+    <%= f.label :max_memory_supported %><br>
+    <%= f.text_field :maxmemorysupported %>
+  </div>
+  <div class="field">
+    <%= f.label :hdd %><br>
+    <%= f.text_field :hdd %>
+  </div>
+  <div class="field">
+    <%= f.label :hdd_interface %><br>
+    <%= f.text_field :hddinterface %>
+  </div>
+  <div class="field">
+    <%= f.label :hdd_rpm %><br>
+    <%= f.text_field :hddrpm %>
+  </div>
+  <div class="field">
+    <%= f.label :optical_drive_type %><br>
+    <%= f.text_field :opticaldrivetype %>
+  </div>
+  <div class="field">
+    <%= f.label :optical_drive_spec %><br>
+    <%= f.text_field :opticaldrivespec %>
+  </div>
+  <div class="field">
+    <%= f.label :audio_chipset %><br>
+    <%= f.text_field :audiochipset %>
+  </div>
+  <div class="field">
+    <%= f.label :audio_channels %><br>
+    <%= f.text_field :audiochannels %>
+  </div>
+  <div class="field">
+    <%= f.label :lan_chipset %><br>
+    <%= f.text_field :lanchipset %>
+  </div>
+  <div class="field">
+    <%= f.label :lan_speed %><br>
+    <%= f.text_field :lanspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :front_usb %><br>
+    <%= f.text_field :frontusb %>
+  </div>
+  <div class="field">
+    <%= f.label "ps/2"%><br>
+    <%= f.text_field :ps2 %>
+  </div>
+  <div class="field">
+    <%= f.label :video_ports %><br>
+    <%= f.text_field :videoports %>
+  </div>
+  <div class="field">
+    <%= f.label :rear_usb %><br>
+    <%= f.text_field :rearusb %>
+  </div>
+  <div class="field">
+    <%= f.label :rj45 %><br>
+    <%= f.text_field :rj45 %>
+  </div>
+  <div class="field">
+    <%= f.label :rear_audio_ports %><br>
+    <%= f.text_field :rearaudioports %>
+  </div>
+  <div class="field">
+    <%= f.label :pci_slots %><br>
+    <%= f.text_area :pcislots %>
+  </div>
+  <div class="field">
+    <%= f.label :mouse_type %><br>
+    <%= f.text_field :mousetype %>
+  </div>
+  <div class="field">
+    <%= f.label :keyboard_type %><br>
+    <%= f.text_field :keyboardtype %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

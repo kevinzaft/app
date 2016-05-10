@@ -1,0 +1,10 @@
+<h1>Power Protection</h1>
+<a href="/power_protections/new" class="new_computer_link">New Product </a>
+<% @power_protections.each do |power_protection| %>
+  <h2><%= power_protection.name %></h2>
+  <p>
+    <%= power_protection.price %>
+  </p>
+  <%= link_to "View full Product", power_protection %>
+  <a href="/power_protections/<%= power_protection.id %>" data-method="delete">Destroy</a>
+<% end %>

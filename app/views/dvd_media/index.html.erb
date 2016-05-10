@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dvd Media</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dvd_media.each do |dvd_medium| %>
+      <tr>
+        <td><%= dvd_medium.name %></td>
+        <td><%= dvd_medium.price %></td>
+        
+        <td><%= link_to 'Show', dvd_medium %></td>
+        <td><%= link_to 'Edit', edit_dvd_medium_path(dvd_medium) %></td>
+        <td><%= link_to 'Destroy', dvd_medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dvd medium', new_dvd_medium_path %>

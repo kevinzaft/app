@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Video Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @video_cards.each do |video_card| %>
+      <tr>
+        <td><%= video_card.name %></td>
+        <td><%= video_card.price %></td>
+        <td><%= link_to 'Show', video_card %></td>
+        <td><%= link_to 'Edit', edit_video_card_path(video_card) %></td>
+        <td><%= link_to 'Destroy', video_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video card', new_video_card_path %>

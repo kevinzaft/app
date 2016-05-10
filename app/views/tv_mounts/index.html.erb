@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tv Mounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tv_mounts.each do |tv_mount| %>
+      <tr>
+        <td><%= tv_mount.name %></td>
+        <td><%= tv_mount.price %></td>
+        <td><%= link_to 'Show', tv_mount %></td>
+        <td><%= link_to 'Edit', edit_tv_mount_path(tv_mount) %></td>
+        <td><%= link_to 'Destroy', tv_mount, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tv mount', new_tv_mount_path %>

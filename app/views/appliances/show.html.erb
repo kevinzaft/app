@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @appliance.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @appliance.price %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @appliance.code %>
+</p>
+
+<p>
+  <strong>Appliancetype:</strong>
+  <%= @appliance.appliancetype %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @appliance.brand %>
+</p>
+
+<p>
+  <strong>Appliancemodel:</strong>
+  <%= @appliance.appliancemodel %>
+</p>
+
+<p>
+  <strong>Features:</strong>
+  <%= @appliance.features %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @appliance.power %>
+</p>
+
+<p>
+  <strong>Specifications:</strong>
+  <%= @appliance.specifications %>
+</p>
+
+<p>
+  <strong>Dimensions:</strong>
+  <%= @appliance.dimensions %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @appliance.weight %>
+</p>
+
+<p>
+  <strong>Warranty:</strong>
+  <%= @appliance.warranty %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @appliance.other %>
+</p>
+
+<%= link_to 'Edit', edit_appliance_path(@appliance) %> |
+<%= link_to 'Back', appliances_path %>

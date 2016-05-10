@@ -1,0 +1,10 @@
+<h1>I/O Controllers</h1>
+<a href="/io_controllers/new" class="new_computer_link">New Product </a>
+<% @io_controllers.each do |io_controller| %>
+  <h2><%= io_controller.name %></h2>
+  <p>
+    <%= io_controller.price %>
+  </p>
+  <%= link_to "View full Product", io_controller %>
+  <a href="/io_controllers/<%= io_controller.id %>" data-method="delete">Destroy</a>
+<% end %>

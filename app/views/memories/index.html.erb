@@ -1,0 +1,10 @@
+<h1>memory</h1>
+<a href="/memories/new" class="new_computer_link">New Product </a>
+<% @memories.each do |memory| %>
+  <h2><%= memory.name %></h2>
+  <p>
+    <%= memory.price %>
+  </p>
+  <%= link_to "View full Product", memory %>
+  <a href="/memories/<%= memory.id %>" data-method="delete">Destroy</a>
+<% end %>

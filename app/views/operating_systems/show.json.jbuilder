@@ -1,0 +1,1 @@
+json.extract! @operating_system, :id, :name, :price, :code, :disclaimer, :brand, :brandmodel, :bitversion, :version, :systemrequirements, :packaging, :features, :warranty, :other, :created_at, :updated_at

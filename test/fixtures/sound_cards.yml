@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  chipset: MyString
+  channels: MyString
+  samplerate: MyString
+  digitalaudio: MyString
+  snr: MyString
+  linein: MyString
+  lineout: MyString
+  spdif: MyString
+  mic: MyString
+  auxport: MyString
+  otherport: MyString
+  interface: MyString
+  os: MyString
+  systemrequirements: MyText
+  features: MyText
+  dimension: MyString
+  weight: MyString
+  packagecontents: MyText
+  plug: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  chipset: MyString
+  channels: MyString
+  samplerate: MyString
+  digitalaudio: MyString
+  snr: MyString
+  linein: MyString
+  lineout: MyString
+  spdif: MyString
+  mic: MyString
+  auxport: MyString
+  otherport: MyString
+  interface: MyString
+  os: MyString
+  systemrequirements: MyText
+  features: MyText
+  dimension: MyString
+  weight: MyString
+  packagecontents: MyText
+  plug: MyText
+  other: MyText

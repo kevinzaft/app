@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Other Media</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @other_media.each do |other_medium| %>
+      <tr>
+        <td><%= other_medium.name %></td>
+        <td><%= other_medium.price %></td>
+        
+        <td><%= link_to 'Show', other_medium %></td>
+        <td><%= link_to 'Edit', edit_other_medium_path(other_medium) %></td>
+        <td><%= link_to 'Destroy', other_medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Other medium', new_other_medium_path %>

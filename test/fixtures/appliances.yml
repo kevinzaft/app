@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  appliancetype: MyString
+  brand: MyString
+  appliancemodel: MyString
+  features: MyText
+  power: MyText
+  specifications: MyText
+  dimensions: MyString
+  weight: MyString
+  warranty: MyText
+  other: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  appliancetype: MyString
+  brand: MyString
+  appliancemodel: MyString
+  features: MyText
+  power: MyText
+  specifications: MyText
+  dimensions: MyString
+  weight: MyString
+  warranty: MyText
+  other: MyText

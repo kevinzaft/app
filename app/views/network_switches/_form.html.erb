@@ -1,0 +1,89 @@
+<%= form_for(@network_switch) do |f| %>
+  <% if @network_switch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@network_switch.errors.count, "error") %> prohibited this network_switch from being saved:</h2>
+
+      <ul>
+      <% @network_switch.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :series %><br>
+    <%= f.text_field :series %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :brandmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :format %><br>
+    <%= f.text_field :format %>
+  </div>
+  <div class="field">
+    <%= f.label :standards %><br>
+    <%= f.text_area :standards %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_ports %><br>
+    <%= f.text_field :primaryports %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_port_speed %><br>
+    <%= f.text_field :primaryportspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :layer %><br>
+    <%= f.text_field :layer %>
+  </div>
+  <div class="field">
+    <%= f.label :power %><br>
+    <%= f.text_field :power %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :package %><br>
+    <%= f.text_area :package %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty %><br>
+    <%= f.text_area :warranty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

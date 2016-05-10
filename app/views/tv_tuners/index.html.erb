@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tv Tuners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tv_tuners.each do |tv_tuner| %>
+      <tr>
+        <td><%= tv_tuner.name %></td>
+        <td><%= tv_tuner.price %></td>
+        <td><%= link_to 'Show', tv_tuner %></td>
+        <td><%= link_to 'Edit', edit_tv_tuner_path(tv_tuner) %></td>
+        <td><%= link_to 'Destroy', tv_tuner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tv tuner', new_tv_tuner_path %>

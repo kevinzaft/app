@@ -1,0 +1,10 @@
+<h1>Cables</h1>
+<a href="/cables/new" class="new_cable_link">New Product </a>
+<% @cables.each do |cable| %>
+  <h2><%= cable.name %></h2>
+  <p>
+    <%= cable.price %>
+  </p>
+  <%= link_to "View full Product", cable %>
+  <a href="/cables/<%= cable.id %>" data-method="delete">Destroy</a>
+<% end %>

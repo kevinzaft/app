@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  series: MyString
+  powertype: MyString
+  maxpower: MyString
+  fans: MyString
+  pfc: MyString
+  mainconnector: MyString
+  twelvevrails: MyString
+  pci: MyString
+  sata: MyString
+  efficiency: MyString
+  voltageprotection: MyString
+  inputvoltage: MyString
+  inputfrequency: MyString
+  inputcurrent: MyString
+  output: MyString
+  dimensions: MyString
+  features: MyText
+
+two:
+  name: MyString
+  price: MyString
+  code: MyString
+  brand: MyString
+  model: MyString
+  series: MyString
+  powertype: MyString
+  maxpower: MyString
+  fans: MyString
+  pfc: MyString
+  mainconnector: MyString
+  twelvevrails: MyString
+  pci: MyString
+  sata: MyString
+  efficiency: MyString
+  voltageprotection: MyString
+  inputvoltage: MyString
+  inputfrequency: MyString
+  inputcurrent: MyString
+  output: MyString
+  dimensions: MyString
+  features: MyText

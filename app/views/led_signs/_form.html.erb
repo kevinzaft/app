@@ -1,0 +1,61 @@
+<%= form_for(@led_sign) do |f| %>
+  <% if @led_sign.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@led_sign.errors.count, "error") %> prohibited this led_sign from being saved:</h2>
+
+      <ul>
+      <% @led_sign.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :signmodel %><br>
+    <%= f.text_field :signmodel %>
+  </div>
+  <div class="field">
+    <%= f.label :colors %><br>
+    <%= f.text_field :colors %>
+  </div>
+  <div class="field">
+    <%= f.label :volts %><br>
+    <%= f.text_field :volts %>
+  </div>
+  <div class="field">
+    <%= f.label :datatransfer %><br>
+    <%= f.text_field :datatransfer %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_area :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_area :other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

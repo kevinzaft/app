@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  standards: MyText
+  wirelessdatarates: MyString
+  security: MyText
+  interface: MyString
+  frequencyband: MyString
+  channel: MyText
+  modulation: MyText
+  transmittedpower: MyText
+  antenna: MyString
+  color: MyString
+  systemrequirements: MyText
+  features: MyText
+  dimensions: MyString
+  weight: MyString
+  temperature: MyString
+  humidity: MyString
+  package: MyText
+  warranty: MyText
+  other: MyText
+
+two:
+  price: MyString
+  code: MyString
+  brand: MyString
+  brandmodel: MyString
+  standards: MyText
+  wirelessdatarates: MyString
+  security: MyText
+  interface: MyString
+  frequencyband: MyString
+  channel: MyText
+  modulation: MyText
+  transmittedpower: MyText
+  antenna: MyString
+  color: MyString
+  systemrequirements: MyText
+  features: MyText
+  dimensions: MyString
+  weight: MyString
+  temperature: MyString
+  humidity: MyString
+  package: MyText
+  warranty: MyText
+  other: MyText

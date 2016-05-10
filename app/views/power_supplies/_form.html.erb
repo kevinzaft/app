@@ -1,0 +1,105 @@
+<%= form_for(@power_supply) do |f| %>
+  <% if @power_supply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@power_supply.errors.count, "error") %> prohibited this power_supply from being saved:</h2>
+
+      <ul>
+      <% @power_supply.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.text_field :code, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :series %><br>
+    <%= f.text_field :series, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :power_type %><br>
+    <%= f.text_field :powertype, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :max_power %><br>
+    <%= f.text_field :maxpower, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :fans %><br>
+    <%= f.text_field :fans, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :pfc %><br>
+    <%= f.text_field :pfc, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :main_connector %><br>
+    <%= f.text_field :mainconnector, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label "+12V rails" %><br>
+    <%= f.text_field :twelvevrails, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :pci %><br>
+    <%= f.text_field :pci, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :SATA %><br>
+    <%= f.text_field :sata, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :efficiency %><br>
+    <%= f.text_field :efficiency, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :voltage_protection %><br>
+    <%= f.text_field :voltageprotection, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :input_voltage %><br>
+    <%= f.text_field :inputvoltage, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :input_frequency %><br>
+    <%= f.text_field :inputfrequency, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :input_current %><br>
+    <%= f.text_field :inputcurrent, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :output %><br>
+    <%= f.text_field :output, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions, :size => 150 %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features, cols: "150", rows: "10" %> %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

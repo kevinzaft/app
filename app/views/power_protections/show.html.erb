@@ -1,0 +1,21 @@
+
+<h1><%= @power_protection.name %></h1>
+<p>
+  <pre>
+  <span class="inner-pre" style="font-size: 15px">
+  	<%= @power_protection.code %> <br>	
+  	<%= @power_protection.pptype %> <br>
+    <%= @power_protection.general %> <br>
+    <%= @power_protection.technical %> <br>
+    <%= @power_protection.battery %> <br>
+    <%= @power_protection.power %> <br>
+    <%= @power_protection.physical %> <br>
+    <%= @power_protection.other %> <br>
+    <%= @power_protection.warranty %> <br>
+    <%= @power_protection.price %> <br>
+
+  </span> 
+  </pre>
+  <a href="/power_protections/<%= @power_protection.id %>/edit">Edit</a>
+</p>
+
